@@ -2,3 +2,21 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
 }
+
+/* if user preference set to light mode */
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* if user preference set to light mode */
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
