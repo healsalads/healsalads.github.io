@@ -1,37 +1,39 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+    font-size: 1rem;
+    background-image: url("https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1878&q=80");
     background-attachment: fixed;
+    margin-top: 1rem;
+    color:white !important;
 }
 
 /* if user preference set to light mode */
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        margin-top: 1rem;
-        color: black;
-        background-image: url("https://images.unsplash.com/photo-1693491011599-6b912b529db8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
+    .card {
+        color: black !important;
     }
 }
 
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-        background-image: url("https://images.unsplash.com/photo-1617884638394-d9eef1b0f40e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    card {
+        color: white !important;
     }
 }
 .card {
     background-color: rgba(255,255,255,0.30);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 .item-price{
     display: inline-block;
     width: 90%;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
 }
 .category{
+    background-color: rgba(0,0,0,0);
     display: inline-block;
+    padding: 0;
 }
