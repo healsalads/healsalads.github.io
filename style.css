@@ -1,7 +1,22 @@
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap'); /*for Headings*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap'); /*for all text other than Headings*/
+
+/* setting variables for colors */
+:root{
+    --red-category:#D92534;/*non-veg*/
+    --green-category:#167336;/*veg*/
+    --new-item:#5ABF56;
+    --myBGColor:#F2E3D5;
+    --myPrimaryColor:#401801;
+}
+
+
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    background-image: url("https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1878&q=80");
+    background-color: #F2E3D5;
     background-attachment: fixed;
     margin-top: 1rem;
     color:white !important;
@@ -22,18 +37,76 @@ body{
         color: white !important;
     }
 }
+
+.card-header{
+font-weight: 800;
+}
+
 .card {
     background-color: rgba(255,255,255,0.30);
     backdrop-filter: blur(5px);
 }
 .item-price{
     display: inline-block;
-    width: 90%;
-    background-color: rgba(0,0,0,0);
-    padding: 0;
+    position: absolute;
+    left:auto
 }
 .category{
-    background-color: rgba(0,0,0,0);
     display: inline-block;
-    padding: 0;
+    position: absolute;
+    right: 10px;
+}
+.card-footer{
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+/*edit this block to edit the "NEW" logo*/
+h1.item-new::after{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    content: "NEW";
+    color: white;
+    font-size: 0.6rem;
+    background-color: var(--new-item);
+    padding: 3px;
+}
+/*adding the right border green highlight for new items*/
+.item-new{
+border-right: 10px var(--new-item) solid;
+}
+
+.veg::after{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.non-veg::after{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.egg::after{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
 }
