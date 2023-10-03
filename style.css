@@ -24,7 +24,7 @@ body{
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
+    body, card {
         color: var(--myBGColor);
         background-color: var(--myPrimaryColor);
     }
