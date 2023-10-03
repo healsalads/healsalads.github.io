@@ -16,23 +16,17 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    background-color: #F2E3D5;
+    background-color: var(--myBGColor);
+    color: var(--myPrimaryColor);
     margin-top: 1rem;
-}
-
-/* if user preference set to light mode */
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    .card {
-        color: black !important;
-    }
 }
 
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    card {
-        color: white !important;
+    body {
+        color: var(--myBGColor);
+        background-color: var(--myPrimaryColor);
     }
 }
 
