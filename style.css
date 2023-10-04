@@ -27,14 +27,14 @@ body{
     body, h1.card-header, p.card-body, p.card-footer{
         color: var(--myBGColor);
     }
-body{
+    body{
         background-color: var(--myPrimaryColor);
     }
-
 }
 
 .card-header{
-font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 .card {

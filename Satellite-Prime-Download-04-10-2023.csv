@@ -1,0 +1,19 @@
+Id,Handle,Name,"Short Name",Description,"Parent Category Handle","KOT Type","Sort Order",Archive?
+74479,heal-smoothies,Smoothies,,,,kot,1,No
+71924,combo-mafia-breakfast-combo,"Breakfast Combo",,,,kot,1,No
+74481,heal-salads,Salads,,,,kot,2,No
+71925,combo-mafia-rice-combo,"Rice Combo",,,,kot,2,No
+102250,healthy-dosa-with-bhurji,"Healthy Dosa With Bhurji",,,,,3,No
+71926,combo-mafia-indian-combo,"Indian Combo",,,,kot,3,No
+74478,heal-salad-wraps,"Salad Wraps",,,,kot,4,No
+71927,combo-mafia-chinese-combo,"Chinese Combo",,,,kot,4,No
+74480,heal-sandwiches,Sandwiches,,,,kot,5,No
+71928,combo-mafia-sandwich-combo,"Sandwich Combo",,,,kot,5,No
+74482,heal-parfait,"Parfait (Overnight Soaked Oats)",,,,kot,6,No
+102354,mains,Mains,,,,,7,No
+74484,heal-mains,Mains,,,mains,,7,No
+74485,heal-rice-bowls,"Rice Bowls",,,mains,,8,No
+74483,heal-mini-meals,"Mini Meals",,,,kot,9,No
+74486,heal-pastas,Pastas,,,mains,,9,No
+74487,heal-cheat-day-meal,"Cheat Day Meal",,,,kot,10,No
+74488,heal-parathas,Parathas,,,,kot,11,No
