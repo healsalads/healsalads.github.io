@@ -24,7 +24,7 @@ body{
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body, .card-header h1, .card-body p, .card-footer span {
+    body, h1.card-header, p.card-body, p.card-footer{
         color: var(--myBGColor);
     }
 body{
@@ -104,4 +104,10 @@ border-right: 10px var(--new-item) solid;
     content: "";
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
+}
+span.item-price{
+    font-size: 1.2rem;
+}
+span.item-price::before{
+    content:"₹ "
 }
