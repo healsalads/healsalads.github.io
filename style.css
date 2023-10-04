@@ -24,10 +24,13 @@ body{
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body, card {
+    body, .card-header h1, .card-body p, .card-footer span {
         color: var(--myBGColor);
+    }
+body{
         background-color: var(--myPrimaryColor);
     }
+
 }
 
 .card-header{
