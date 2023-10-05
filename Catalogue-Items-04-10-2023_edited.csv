@@ -1,0 +1,78 @@
+sort order,Name,Category Handle,Description,Sales Price,Food Type
+001,Som Tum Salad,Salads,"Unripe Papaya, carrots, tomatoes, ginger, coriander, peanuts, sesame seeds and Tamarind  dressing(contains green chilly and garlic)",128/230,veg
+001,Earth Bowl Salad,Salads,"Quinoa + pearl barley, lettuce, tomatoes, corns, organic chickpeas, spicy broccoli, cottage cheese, pesto vinaigrette.",128/230,veg
+001,Couscous Salad,Salads,"couscous, bell peppers, lettuce mix, tomatoes, feta, shredded carrots, sweetcorn, carrot chili vinaigrette",128/230,veg
+001,Elote Bowl Salad,Salads,"Bell-peppers, tomatoes, shredded cabbage, cilantro, tortilla chips, spicy sunflower seeds, warm quinoa, Lettuce, lime cilantro jalapeño vinaigrette.",128/230,veg
+001,Spicy Thai Salad,Salads,"Roasted sesame tofu, corns, cucumbers, shredded red cabbage, cilantro, spicy sunflower seeds, peanut, chopped romaine, lime squeeze, spicy peanut dressing",128/230,veg
+001,Middle Eastern Bowl Salad,Salads,"Chopped romaine, herb falafel, local feta, tomatoes, red onion, cucumbers, za'atar breadcrumbs, house-made hummus, cucumber tahini yogurt dressing.",128/230,veg
+001,Lentil Avocado Salad,Salads,"Avocado, mix lentils sprouts, spicy broccoli, raw beets, cucumbers, shredded carrots, basil, raw walnuts, chopped romaine, balsamic vinaigrette.",148/250,veg
+001,Harvest Bowl Salad,Salads,"Baby spinach + shredded lettuce, spicy quinoa, spicy broccoli, raw beets, carrots, sprouts, basil, roasted tofu, sriracha, sweet and spicy vinaigrette.",128/230,veg
+001,Steamed Vegetable Salad,Salads,Steamed seasonal vegetables.,128/230,veg
+001,Grilled Vegetable Salad,Salads,Grilled seasonal vegetables.,128/230,veg
+001,Carbo Load,Salads,"Roasted potatoes, chickpeas, broccoli, bell peppers, green capsicum, spinach, cilantro with tahini dressing.",128/230,veg
+001,Cut Fruit Salad,Salads,Seasonal cut Fruits with Yogurt dressing.,148/250,veg
+002,Scrambled egg (2 pieces),Salads-Add On,Added with your order of salad,40,egg
+002,Stock Chicken,Salads-Add On,Added with your order of salad,50,non-veg
+002,Roasted Chicken (Italian),Salads-Add On,Added with your order of salad,60,non-veg
+002,Roasted Chicken (Piri-Piri),Salads-Add On,Added with your order of salad,60,non-veg
+002,Boiled Sausages (60 gm),Salads-Add On,Added with your order of salad,55,non-veg
+002,Boiled Sausages (90 gm),Salads-Add On,Added with your order of salad,80,non-veg
+002,Pan-Fried Sausages (60 gm),Salads-Add On,Added with your order of salad,60,non-veg
+002,Pan-Fried Sausages (90 gm),Salads-Add On,Added with your order of salad,85,non-veg
+003,Vegan Tofu Bhurji With Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich tofu and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets.",210,veg
+003,Vegan Tofu Bhurji With Beetroot Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich tofu and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets.",210,veg
+003,Soya Bhurji with Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich Soya Granule bhurji and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets.",210,veg
+003,Soya Bhurji with Beetroot Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich Soya Granule bhurji and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets.",210,veg
+003,Egg Bhurji with Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich traditional Egg bhurji and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets. 3 Eggs.",210,egg
+003,Egg Bhurji with Beetroot Millet Dosa,Healthy Dosa With Bhurji,"A perfect combination of protein-rich traditional Egg bhurji and wholesome gluten-free millet dosa for a delicious and nourishing experience. Dosa is made-up of Ragi, Buckwheat, Jawar and Little Millets. 3 Eggs.",210,egg
+004,Vanilla Cloud Smoothie,Smoothies,"The ultimate good-for-you dessert! Vanilla Cloud contains cashew milk, vanilla extract, banana, maple honey. If drinking at night do give it 3 hour to ensure full digestion!",250,veg
+004,Iron & C Booster Smoothie,Smoothies,"Experience the ultimate powerhouse of nutrition with our Iron Boost smoothie. Packed with dark leafy greens like spinach and Vitamin C-rich fruits like kiwis, this smoothie is the perfect blend to ensure optimal absorption of iron in your body.",250,veg
+004,Apple Pie Smoothie,Smoothies,"Indulge in our delicious apple pie smoothie, packed with a healthy dose of probiotics and an abundance of vitamins and minerals. This perfect breakfast, snack, or dessert features seasonal apples, a hint of cinnamon, and all the benefits of Yogurt.",250,veg
+004,Anti- Aging Smoothie,Smoothies,"Our natural and healthy smoothie, made with grapes, apples, and curd, is packed with antioxidants, vitamins, potassium. Enjoy the benefits of reduced cholesterol levels and slowed aging with every sip!",250,veg
+004,Classic Peanut Butter & Banana Smoothie,Smoothies,"Old and classic energy booster and protein replenisher smoothie with peanut butter, banana, milk or yogurt and to provide a kick, cocoa!",250,veg
+004,Berry Blast Smoothie,Smoothies,"The perfect refresher for your taste-buds and your system, sip on this antioxidant-rich drink today. Sweetened with honey and topped with super-food chia seeds, we suggest you have a blast today!",250,veg
+004,A. B. C Smoothie,Smoothies,"Get your daily dose of nutrients and energy with our ABC Smoothie! Featuring the perfect blend of fresh and crisp apples, sweet and crunchy carrots, and earthy and vibrant beetroot, this smoothie is packed with vitamins, minerals, and antioxidants that are essential for a healthy and active lifestyle.",250,veg
+004,Orange Papaya Smoothie,Smoothies,"Experience the double benefits of our healthy orange papaya drink - the natural laxative properties of papaya blended perfectly with the probiotics from curd, ensuring optimal stomach health.",250,veg
+005,Pesto Chicken Sandwich,Sandwiches,"Jumbo sandwich bread filled with smoked chicken, Iceberg lettuce, red onion and pesto spread.",250,non-veg
+005,Grilled Vegetables Sandwich,Sandwiches,"Jumbo sandwich bread filled with grilled exotic vegetables, and Harissa spread.",200,veg
+005,Paneer Cheese Sandwich,Sandwiches,"Jumbo sandwich bread filled with shredded paneer, bell peppers, onions, cheese and seasoned with our special seasoning.",210,veg
+005,Falafel Hummus Sandwich,Sandwiches,"Jumbo sandwich bread filled with Falafel, onion, tomatoes, cucumber and hummus spread.",200,veg
+005,Bombay Masala Sandwich,Sandwiches,"Savor the spicy and aromatic flavors of Mumbai with our Bombay Masala Sandwich. Made with a mouth-watering combination of toasted bread, Potatoes, tomatoes, onions, and a delectable masala spice mix, this sandwich is the perfect blend of savory and satisfying.",180,veg
+005,Classic Tomato Basil & Mozzarella,Sandwiches,"Jumbo sandwich bread filled with fresh ripened tomatoes, green basil, and stretchy mozzarella cheese.",200,veg
+005,Bbq Chicken Sandwich,Sandwiches,"Jumbo sandwich bread filled with roasted chicken, onion, bell peppers in bbq seasoning.",250,non-veg
+006,Hummus And Chicken Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing baby spinach, onion, tomato, cucumber jalapeno, harissa chicken, hummus.",320,non-veg
+006,Sabzi Salad Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing baby spinach + shredded lettuce, spicy quinoa, spicy broccoli, raw beets, carrots, sprouts, tofu.",310,veg
+006,Middle Eastern Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing chopped romaine, herb falafel, local feta, tomatoes, red onion, cucumbers, house-made hummus and yogurt.",310,veg
+006,Spicy Thai Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing layer of peanut sauce, tofu, corns, cucumbers, shredded red cabbage, cilantro, spicy sunflower seeds, and peanuts.",310,veg
+006,Earth Salad Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing layer of pesto, quinoa + pearl barley, lettuce, tomatoes, corns, organic chickpeas, spicy broccoli and cottage cheese.",310,veg
+006,Lentil+avocado Wrap [2 Wraps],Salad Wraps,"House made Whole Wheat tortilla wrap containing avocado, mix-lentil sprouts, spicy broccoli, raw beets, cucumbers, shredded carrots, raw walnuts, chopped romaine.",320,veg
+007,Pita Falafel and Hummus Platter,Mains,"This delicious platter includes 2 whole wheat pitas, 4 baked falafels, a fresh side salad, and 2 types of creamy hummus.",300,veg
+007,Farm Veggie Quinoa With Black Pepper Sauce,Mains,"Try our Farm Veggie Quinoa Bowl with umami Black Pepper Sauce for a healthy and flavorful meal. Fresh veggies, tender quinoa, and our delicious sauce make it the perfect balance of taste and nutrition.",249,veg
+007,Koshari,Mains,"This National dish of Egypt and a popular street food is a very tempting, Healthy, and a great Vegan option! Consisting the layers of flavoured Rice Pilaf, sprouted Lentils, Pasta, Chickpeas, zesty tomato sauce and topped with house spices.",290,veg non-veg
+007,Rice Noodles Bowl,Mains,"Rice noodles, roasted tofu, cucumber, carrot, baked beans, sesame seeds with peanut sauce.",290,veg
+007,Grilled Harissa Chicken,Mains,"House made harissa rub marinated chicken, grilled to perfection, served with our special burnt garlic tzatziki sauce along with delicious as well as nutritious couscous salad.",440,non-veg
+007,High Fiber Vegetarian Steak,Mains,"Green lentil, brown rice, spinach, and broccoli steak, grilled and served with umami black pepper sauce, and saute exotic vegetables.",380,veg
+008,Grilled Tofu & Veggies In Italian Sauce,Rice Bowls,Grilled Tofu along with sauteed vegetables in Italian Red Sauce served with Brown Rice.,290,veg
+008,Grilled Paneer & Veggies In Italian Sauce,Rice Bowls,Grilled Paneer along with sauted vegetables in Italian Red Sauce served with Brown Rice.,290,veg
+008,Red Thai Curry,Rice Bowls,Red Thai Curry with sauted vegetable served with aromatic Basil Rice.,290,veg non-veg
+008,Chicken Fajita Bowl,Rice Bowls,"Mexican spiced chicken tossed with bell peppers and onions, served with oregano rice, salsa and tortilla chips.",340,non-veg
+008,Grilled Chicken & Vegies In Italian Sauce,Rice Bowls,Grilled Chicken along with sauteed vegetables in Italian Red Sauce served with Brown Rice.,340,non-veg
+009,Strawberry Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",250,veg
+009,Blueberry Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",250,veg
+009,Peanut Butter And Raw Cocoa Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",250,veg
+009,Rasberry Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",250,veg
+009,Fig Honey Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",270,veg
+009,Mango Milk Yogurt Oats,Parfait (Overnight Soaked Oats),"Overnight soaked oats in milk, topped with flavoured yogurt. All parfaits are topped with fresh fruit, seeds (like flax, chia.). Roasted nuts (almonds, cashews) & honey.",240,veg
+010,Pink Sauce Pasta,Pastas,"Choice of pasta tossed in mix of  tangy red tomato sauce and topped with creamy white sauce. Served along with sauteed vegetables, and garlic bread.",325,veg
+010,Pasta In Alferado Sauce,Pastas,"Choice of pasta tossed in creamy white sauce. Served along with sauteed vegetables, and garlic bread.",325,veg
+010,Pasta In Arrabbiata Sauce,Pastas,"Choice of pasta tossed in tangy red tomato sauce. Served along with sauteed vegetables, and garlic bread.",299,veg
+011,Quesadillas,Mini Meals,"2 Quesadillas are served in one portion. Quesadillas are corn tortilla with melted cheese and tangy corn, beans stuffing.",210,veg
+011,Sambar With Rawa Appe,Mini Meals,"South Indian Staple, Sambar served along with Rawa Appe(golf ball shaped pan fried cakes) crispy on the outside and soft in the inside.",185,veg
+011,Dal Makhani(Low Fat) With Laccha Prantha,Mini Meals,"Slow Cooked Black Lentil Prepared in less butter and cream, Served with Whole Wheat Laccha Paratha.",220,veg
+011,Kadhai Panner With Laccha Prantha,Mini Meals,"Freshly sautéed Paneer, bell-peppers and onion simmered in rich tomato gravy and roasted spices served with Whole Wheat Laccha Prantha.",220,veg
+012,Mooli Paratha,Parathas,2 Parathas with Mooli and Onion Filling. Served with Mixed Pickle and Curd.,180,veg
+012,High Protein Sattu Paratha,Parathas,"Made with a blend of roasted chickpeas and spices, our sattu filling is packed with protein and flavor. Our paratha is made with whole wheat flour and cooked to perfection on a hot griddle, making it crispy on the outside and soft on the inside. 2 Paratha with curd.",180,veg
+012,Aloo Payaz Paratha,Parathas,2 Parathas with Potato and Onion Filling. Served with Mixed Pickle and Curd.,180,veg
+012,Egg Paratha,Parathas,2 Parathas with Egg Filling. Served with Mixed Pickle and Curd.,190,egg
+012,Paneer Payaz Paratha,Parathas,2 Parathas with Paneer and Onion Filling. Served with Mixed Pickle and Curd.,190,veg
+013,Sarso Da Saag Makki Di Roti,Cheat Day Meal,"A delectable dish of mustard green leaves curry, infused with aromatic spices and tangy flavors, is the perfect accompaniment for the soft and fluffy cornmeal rotis, generously slathered with butter and sprinkled with jaggery powder.",300,veg
