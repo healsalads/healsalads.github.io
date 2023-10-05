@@ -4,9 +4,9 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="style.css?v=041020230224">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,25 @@
 </head>
 
 <body>
-    <div class="card rounded-3 m-3" data-menu-category="Mains">
+    <!-- Tab Links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Mains')">Mains</button>
+        <button class="tablinks" onclick="openCity(event, 'Salads')">Salads</button>
+        <!-- salad add-on is included within salad, to include in its own tab, add a new button -->
+        <button class="tablinks" onclick="openCity(event, 'Salad Wraps')">Salad Wraps</button>
+        <button class="tablinks" onclick="openCity(event, 'Healthy Dosa With Bhurji')">Healthy Dosa With Bhurji</button>
+        <button class="tablinks" onclick="openCity(event, 'Smoothies')">Smoothies</button>
+        <button class="tablinks" onclick="openCity(event, 'Sandwiches')">Sandwiches</button>
+        <button class="tablinks" onclick="openCity(event, 'Rice Bowls')">Rice Bowls</button>
+        <button class="tablinks" onclick="openCity(event, 'Parfait (Overnight Soaked Oats)')">Parfait (Overnight Soaked Oats)</button>
+        <button class="tablinks" onclick="openCity(event, 'Pastas')">Pastas</button>
+        <button class="tablinks" onclick="openCity(event, 'Mini Meals')">Mini Meals</button>
+        <button class="tablinks" onclick="openCity(event, 'Parathas')">Parathas</button>
+        <button class="tablinks" onclick="openCity(event, 'Cheat Day Meal')">Cheat Day Meal</button>
+        <!-- <button class="tablinks" onclick="openCity(event, '')"></button> -->
+    </div>
+
+    <div class="card rounded-3 m-3" data-menu-category="Mains" id="Mains" class="tabcontent">
         <h1 class="card-header">Pita Falafel and Hummus Platter </h1>
         <p class="itemDescrition card-body">This delicious platter includes 2 whole wheat pitas, 4 baked falafels, a
             fresh side
