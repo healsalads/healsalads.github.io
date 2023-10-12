@@ -15,36 +15,36 @@
 
 <body>
     <!-- Tab Links -->
-    <div class="tab">
-        <input type="radio" class="tablinks" id="Mains" checked/>
+    <div class="tab" role="navigation">
+        <input type="radio" class="tablinks" name="menu-category" value="Mains" id="Mains" checked/>
         <label for="Mains">Mains</label>
-        <input type="radio" class="tablinks" id="Salads"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Salads" id="Salads"/>
         <label for="Salads">Salads</label>
         <!-- salad add-on is included within salad, to include in its own tab, add a new button -->
-        <input type="radio" class="tablinks" id="Salad Wraps"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Salad Wraps" id="Salad Wraps"/>
         <label for="Salad Wraps">Salad Wraps</label>
-        <input type="radio" class="tablinks" id="Healthy Dosa With Bhurji"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Healthy Dosa With Bhurji" id="Healthy Dosa With Bhurji"/>
         <label for="Healthy Dosa With Bhurji">Healthy Dosa With Bhurji</label>
-        <input type="radio" class="tablinks" id="Smoothies"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Smoothies" id="Smoothies"/>
         <label for="Smoothies">Smoothies</label>
-        <input type="radio" class="tablinks" id="Sandwiches"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Sandwiches" id="Sandwiches"/>
         <label for="Sandwiches">Sandwiches</label>
-        <input type="radio" class="tablinks" id="Rice Bowls"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Rice Bowls" id="Rice Bowls"/>
         <label for="Rice Bowls">Rice Bowls</label>
-        <input type="radio" class="tablinks" id="Parfait (Overnight Soaked Oats)"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Parfait (Overnight Soaked Oats)"  id="Parfait (Overnight Soaked Oats)"/>
         <label for="Parfait (Overnight Soaked Oats)">Parfait (Overnight Soaked Oats)</label>
-        <input type="radio" class="tablinks" id="Pastas"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Pastas" id="Pastas"/>
         <label for="Pastas">Pastas</label>
-        <input type="radio" class="tablinks" id="Mini Meals"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Mini Meals" id="Mini Meals"/>
         <label for="Mini Meals">Mini Meals</label>
-        <input type="radio" class="tablinks" id="Parathas"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Parathas" id="Parathas"/>
         <label for="Parathas">Parathas</label>
-        <input type="radio" class="tablinks" id="Cheat Day Meal"/>
+        <input type="radio" class="tablinks" name="menu-category" value="Cheat Day Meal" id="Cheat Day Meal"/>
         <label for="Cheat Day Meal">Cheat Day Meal</label>
         <!-- <input type="radio" class="tablinks" id="CategoryNameGoesHere"/> -->
     </div>
 
-    <div class="card rounded-3 m-3" data-menu-category="Mains" id="Mains" class="tabcontent">
+    <div class="card rounded-3 m-3" data-menu-category="Mains">
         <h1 class="card-header">Pita Falafel and Hummus Platter </h1>
         <p class="itemDescrition card-body">This delicious platter includes 2 whole wheat pitas, 4 baked falafels, a
             fresh side
@@ -294,7 +294,7 @@
             spread. </p>
         <p class="card-footer"><span class="item-price">200</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Elote Bowl Salad </h1>
         <p class="itemDescrition card-body">Bell-peppers, tomatoes, shredded cabbage, cilantro, tortilla chips, spicy
             sunflower
@@ -357,7 +357,7 @@
             spice mix, this sandwich is the perfect blend of savory and satisfying. </p>
         <p class="card-footer"><span class="item-price">180</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Spicy Thai Salad </h1>
         <p class="itemDescrition card-body">Roasted sesame tofu, corns, cucumbers, shredded red cabbage, cilantro, spicy
             sunflower seeds, peanut, chopped romaine, lime squeeze, spicy peanut dressing </p>
@@ -418,7 +418,7 @@
             mozzarella cheese. </p>
         <p class="card-footer"><span class="item-price">200</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Middle Eastern Bowl Salad </h1>
         <p class="itemDescrition card-body">Chopped romaine, herb falafel, local feta, tomatoes, red onion, cucumbers,
             za'atar
@@ -440,7 +440,7 @@
             seasoning. </p>
         <p class="card-footer"><span class="item-price">250</span><span class="category non-veg">non-veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Lentil Avocado Salad </h1>
         <p class="itemDescrition card-body">Avocado, mix lentils sprouts, spicy broccoli, raw beets, cucumbers, shredded
             carrots,
@@ -455,24 +455,24 @@
             health. </p>
         <p class="card-footer"><span class="item-price">250</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Harvest Bowl Salad </h1>
         <p class="itemDescrition card-body">Baby spinach + shredded lettuce, spicy quinoa, spicy broccoli, raw beets,
             carrots,
             sprouts, basil, roasted tofu, sriracha, sweet and spicy vinaigrette. </p>
         <p class="card-footer"><span class="item-price">128/230</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Steamed Vegetable Salad </h1>
         <p class="itemDescrition card-body">Steamed seasonal vegetables. </p>
         <p class="card-footer"><span class="item-price">128/230</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Grilled Vegetable Salad </h1>
         <p class="itemDescrition card-body">Grilled seasonal vegetables. </p>
         <p class="card-footer"><span class="item-price">128/230</span><span class="category veg">veg</span></p>
     </div>
-    <div class="card rounded-3 m-3">
+    <div class="card rounded-3 m-3" data-menu-category="Salads">
         <h1 class="card-header">Carbo Load </h1>
         <p class="itemDescrition card-body">Roasted potatoes, chickpeas, broccoli, bell peppers, green capsicum,
             spinach,
