@@ -111,3 +111,28 @@ span.item-price{
 span.item-price::before{
     content:"₹ "
 }
+/* hidding radio buttons */
+input{display: none;}
+/* show labels inline */
+input + label {
+    display: inline-block;
+    border: var(--myBGColor) .1rem solid;
+    padding: .5rem;
+    margin: 5px;
+    margin-bottom: 1px;
+}
+/* hidding content by default */
+div.card[data-menu-category] {display: none;}
+/* showing content based on selection of menu */
+    /* the :has pseudo-class isn't supported by firefox; so, find another method to implement this */
+div:has(input[value="Mains"]:checked) ~ div.card[data-menu-category="Mains"],
+div:has(input[value="Salads"]:checked) ~ div.card[data-menu-category="Salads"],
+div:has(input[value="Salad Wraps"]:checked) ~ div.card[data-menu-category="Salad Wraps"],
+div:has(input[value="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"]{
+    display: block;
+   }
+input:checked + label{
+    background-color: var(--myBGColor);
+    color: var(--myPrimaryColor);
+}
+/* #Mains:checked div.card[data-menu-category="Mains" i]{display: block;} */
