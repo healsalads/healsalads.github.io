@@ -1,19 +1,22 @@
-
 /* importing fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap'); /*for Headings*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap'); /*for all text other than Headings*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+/*for Headings*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap');
+/*for all text other than Headings*/
 
 /* setting variables for colors */
-:root{
-    --red-category:#D92534;/*non-veg*/
-    --green-category:#167336;/*veg*/
-    --new-item:#5ABF56;
-    --myBGColor:#F2E3D5;
-    --myPrimaryColor:#401801;
+:root {
+    --red-category: #D92534;
+    /*non-veg*/
+    --green-category: #167336;
+    /*veg*/
+    --new-item: #5ABF56;
+    --myBGColor: #F2E3D5;
+    --myPrimaryColor: #401801;
 }
 
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background-color: var(--myBGColor);
@@ -24,40 +27,49 @@ body{
 /* if user preference set to light mode */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body, h1.card-header, p.card-body, p.card-footer{
+
+    body,
+    h1.card-header,
+    p.card-body,
+    p.card-footer {
         color: var(--myBGColor);
     }
-    body{
+
+    body {
         background-color: var(--myPrimaryColor);
     }
 }
 
-.card-header{
+.card-header {
     font-size: 1.4rem;
     font-weight: 300;
 }
 
 .card {
-    background-color: rgba(255,255,255,0.30);
+    background-color: rgba(255, 255, 255, 0.30);
     backdrop-filter: blur(5px);
 }
-.item-price{
+
+.item-price {
     display: inline-block;
     position: absolute;
-    left:auto
+    left: auto
 }
-.category{
+
+.category {
     display: inline-block;
     position: absolute;
     right: 10px;
 }
-.card-footer{
+
+.card-footer {
     font-weight: 600;
     padding-bottom: 0.8rem;
     margin-bottom: 1.2rem;
 }
+
 /*edit this block to edit the "NEW" logo*/
-h1.item-new::after{
+h1.item-new::after {
     display: inline-block;
     height: auto;
     width: auto;
@@ -67,12 +79,13 @@ h1.item-new::after{
     background-color: var(--new-item);
     padding: 3px;
 }
+
 /*adding the right border green highlight for new items*/
-.item-new{
-border-right: 10px var(--new-item) solid;
+.item-new {
+    border-right: 10px var(--new-item) solid;
 }
 
-.veg::after{
+.veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -83,7 +96,8 @@ border-right: 10px var(--new-item) solid;
     background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
 }
-.non-veg::after{
+
+.non-veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -94,7 +108,8 @@ border-right: 10px var(--new-item) solid;
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
 }
-.egg::after{
+
+.egg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -105,34 +120,53 @@ border-right: 10px var(--new-item) solid;
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
 }
-span.item-price{
+
+span.item-price {
     font-size: 1.2rem;
 }
-span.item-price::before{
-    content:"₹ "
+
+span.item-price::before {
+    content: "₹ "
 }
+
 /* hidding radio buttons */
-input{display: none;}
+input {
+    display: none;
+}
+
 /* show labels inline */
-input + label {
+input+label {
     display: inline-block;
     border: var(--myBGColor) .1rem solid;
     padding: .5rem;
     margin: 5px;
     margin-bottom: 1px;
 }
+
+/* highlighting the selected label */
+input:checked+label {
+    background-color: var(--myBGColor);
+    color: var(--myPrimaryColor);
+}
+
 /* hidding content by default */
-div.card[data-menu-category] {display: none;}
+div.card[data-menu-category] {
+    display: none;
+}
+
 /* showing content based on selection of menu */
     /* the :has pseudo-class isn't supported by firefox; so, find another method to implement this */
 div:has(input[value="Mains"]:checked) ~ div.card[data-menu-category="Mains"],
 div:has(input[value="Salads"]:checked) ~ div.card[data-menu-category="Salads"],
 div:has(input[value="Salad Wraps"]:checked) ~ div.card[data-menu-category="Salad Wraps"],
-div:has(input[value="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"]{
+div:has(input[value="Smoothies"]:checked) ~ div.card[data-menu-category="Smoothies"],
+div:has(input[value="Sandwiches"]:checked) ~ div.card[data-menu-category="Sandwiches"],
+div:has(input[value="Rice Bowls"]:checked) ~ div.card[data-menu-category="Rice Bowls"],
+div:has(input[value="Parfait (Overnight Soaked Oats)"]:checked) ~ div.card[data-menu-category="Parfait (Overnight Soaked Oats)"],
+div:has(input[value="Pastas"]:checked) ~ div.card[data-menu-category="Pastas"],
+div:has(input[value="Mini Meals"]:checked) ~ div.card[data-menu-category="Mini Meals"],
+div:has(input[value="Parathas"]:checked) ~ div.card[data-menu-category="Parathas"],
+div:has(input[value="Cheat Day Meal"]:checked) ~ div.card[data-menu-category="Cheat Day Meal"],
+div:has(input[value="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"] {
     display: block;
-   }
-input:checked + label{
-    background-color: var(--myBGColor);
-    color: var(--myPrimaryColor);
 }
-/* #Mains:checked div.card[data-menu-category="Mains" i]{display: block;} */
