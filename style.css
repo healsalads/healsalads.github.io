@@ -15,6 +15,9 @@
     --myPrimaryColor: #401801;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +42,59 @@ body {
         background-color: var(--myPrimaryColor);
     }
 }
+/* scrollbar */
+/* width */
+.myNav::-webkit-scrollbar {
+    width: 1px;
+    height: .5rem;
+  }
+  
+  /* Track */
+  .myNav::-webkit-scrollbar-track {
+    background: var(--myPrimaryColor);
+  }
+  
+  /* Handle */
+  .myNav::-webkit-scrollbar-thumb {
+    background: var(--green-category);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .myNav::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
+  /* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--red-category);
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.myNav{
+    position: sticky;
+    top: -2px;
+    z-index: 1;
+    background-color: var(--myPrimaryColor);
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
 .card-header {
     font-size: 1.4rem;
     font-weight: 300;
