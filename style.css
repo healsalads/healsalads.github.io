@@ -24,7 +24,6 @@ body {
     font-size: 1rem;
     background-color: var(--myBGColor);
     color: var(--myPrimaryColor);
-    margin-top: 1rem;
 }
 
 /* if user preference set to light mode */
@@ -42,56 +41,55 @@ body {
         background-color: var(--myPrimaryColor);
     }
 }
-/* scrollbar */
-/* width */
-.myNav::-webkit-scrollbar {
-    width: 1px;
-    height: .5rem;
+
+.myNav::-webkit-scrollbar { /* width */
+    height: .2rem;
   }
   
-  /* Track */
-  .myNav::-webkit-scrollbar-track {
-    background: var(--myPrimaryColor);
+  
+  .myNav::-webkit-scrollbar-track { /* Track */
+    background: #f20fa3e9;
+    z-index: 2;
   }
   
-  /* Handle */
-  .myNav::-webkit-scrollbar-thumb {
-    background: var(--green-category);
+  
+  .myNav::-webkit-scrollbar-thumb { /* Handle */
+    background: #e2df11;
     border-radius: 10px;
   }
   
-  /* Handle on hover */
-  .myNav::-webkit-scrollbar-thumb:hover {
+  
+  .myNav::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
   }
 
-  /* width */
-::-webkit-scrollbar {
-    width: 1px;
+
+::-webkit-scrollbar {  /* width */
+    width: 4px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+
+  ::-webkit-scrollbar-track {  /* Track */
     background: #f1f1f1;
   }
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+  
+  ::-webkit-scrollbar-thumb { /* Handle */
     background: var(--red-category);
     border-radius: 2px;
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  
+  ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
   }
 
 .myNav{
     position: sticky;
-    top: -2px;
+    top: 0px;
     z-index: 1;
-    background-color: var(--myPrimaryColor);
-    padding: 10px;
+    background-color: var(--green-category);
+    /* padding: 10px; */
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -192,16 +190,15 @@ input {
 /* show labels inline */
 input+label {
     display: inline-block;
-    border: var(--myBGColor) .1rem solid;
+    /* border: var(--myBGColor) .1rem solid; */
     padding: .5rem;
-    margin: 5px;
-    margin-bottom: 1px;
+    /* margin: 5px; */
 }
 
 /* highlighting the selected label */
 input:checked+label {
-    background-color: var(--myBGColor);
-    color: var(--myPrimaryColor);
+  background-color: var(--myBGColor);
+  color: var(--myPrimaryColor);
 }
 
 /* hidding content by default */
