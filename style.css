@@ -12,7 +12,8 @@
     /*veg*/
     --new-item: #5ABF56;
     --myBGColor: #F2E3D5;
-    --myPrimaryColor: #401801;
+    --myPrimaryColor: rgba(0,0,0,0.8);
+    /* --myPrimaryColor: #401801; */
 }
 
 html{
