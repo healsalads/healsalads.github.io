@@ -35,6 +35,7 @@ body {
     p.card-body,
     p.card-footer {
         color: var(--myBGColor);
+
     }
 
     body {
@@ -119,6 +120,7 @@ body {
     font-weight: 600;
     padding-bottom: 0.8rem;
     margin-bottom: 1.2rem;
+    background-color: rgba(255,255,255,0);
 }
 
 /*edit this block to edit the "NEW" logo*/
