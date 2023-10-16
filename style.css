@@ -29,7 +29,7 @@ body {
 
 /* if user preference set to light mode */
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 
     body,
     h1.card-header,
@@ -42,6 +42,16 @@ body {
     body {
         background-color: var(--myPrimaryColor);
     }
+}
+*/
+
+#TopLogo{
+    background: var(--myBGColor);
+    height: 10vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    transform: scale(2);
 }
 
 .myNav::-webkit-scrollbar { /* width */
@@ -108,7 +118,8 @@ body {
 .item-price {
     display: inline-block;
     position: absolute;
-    left: auto
+    left: auto;
+    font-style: italic;
 }
 
 .category {
@@ -118,7 +129,6 @@ body {
 }
 
 .card-footer {
-    font-weight: 600;
     padding-bottom: 0.8rem;
     margin-bottom: 1.2rem;
     background-color: rgba(255,255,255,0);
@@ -175,10 +185,6 @@ h1.item-new::after {
     content: "";
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
-}
-
-span.item-price {
-    font-size: 1.2rem;
 }
 
 span.item-price::before {
