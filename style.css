@@ -118,14 +118,8 @@ body {
 .item-price {
     display: inline-block;
     position: absolute;
-    left: auto;
+    right:15px;
     font-style: italic;
-}
-
-.category {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
 }
 
 .card-footer {
@@ -151,7 +145,7 @@ h1.item-new::after {
     border-right: 10px var(--new-item) solid;
 }
 
-.veg::after {
+h1.foodCategory-veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -161,9 +155,12 @@ h1.item-new::after {
     content: "";
     background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
-.non-veg::after {
+h1.foodCategory-non-veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -173,9 +170,12 @@ h1.item-new::after {
     content: "";
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
-.egg::after {
+h1.foodCategory-egg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -185,6 +185,9 @@ h1.item-new::after {
     content: "";
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 span.item-price::before {
