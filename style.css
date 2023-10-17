@@ -145,7 +145,7 @@ h1.item-new::after {
     border-right: 10px var(--new-item) solid;
 }
 
-h1.foodCategory-veg::after {
+.foodCategory-veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -160,7 +160,7 @@ h1.foodCategory-veg::after {
     top: 10px;
 }
 
-h1.foodCategory-non-veg::after {
+.foodCategory-non-veg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -175,7 +175,7 @@ h1.foodCategory-non-veg::after {
     top: 10px;
 }
 
-h1.foodCategory-egg::after {
+.foodCategory-egg::after {
     display: inline-block;
     height: 1rem;
     width: 1rem;
