@@ -8,10 +8,10 @@
 :root {
     --red-category: #D92534;
     /*non-veg*/
-    --green-category: #167336;
+    --green-category: #babb49;
     /*veg*/
     --new-item: #5ABF56;
-    --myBGColor: #F2E3D5;
+    --myBGColor: #e4d3ba;
     --myPrimaryColor: rgba(0,0,0,0.8);
     /* --myPrimaryColor: #401801; */
 }
@@ -60,13 +60,13 @@ body {
   
   
   .myNav::-webkit-scrollbar-track { /* Track */
-    background: #f20fa3e9;
+    background: rgba(0,0,0,0.8);
     z-index: 2;
   }
   
   
   .myNav::-webkit-scrollbar-thumb { /* Handle */
-    background: #e2df11;
+    background: #e4d3ba;
     border-radius: 10px;
   }
   
