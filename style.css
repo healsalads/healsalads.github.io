@@ -22,9 +22,16 @@ html{
 
 body {
     font-family: 'Roboto';
-    font-size: 1rem;
+    font-size: .6rem;
     background-color: var(--myBGColor);
     color: var(--myPrimaryColor);
+}
+
+.card-body:hover{
+    font-size: 1rem;
+}
+.card-body:active{
+    font-size: 1rem;
 }
 
 /* if user preference set to light mode */
