@@ -22,17 +22,17 @@ html{
 
 body {
     font-family: 'Roboto';
-    font-size: .6rem;
+    font-size: 1rem;
     background-color: var(--myBGColor);
     color: var(--myPrimaryColor);
 }
-
+/*
 .card-body:hover{
     font-size: 1rem;
 }
 .card-body:active{
     font-size: 1rem;
-}
+}*/
 
 /* if user preference set to light mode */
 /* Dark mode */
@@ -59,12 +59,12 @@ body {
 
 #TopLogo{
     background: var(--myBGColor);
-    max-width: 100%;
+    /* max-width: 100%; */
     height: 10vh;
     background-repeat: no-repeat;
     position: relative;
-    left: 40vw;
-    transform: scale(1.8);
+    left: 30vw;
+    transform: scale(.9);
 }
 .myNav::-webkit-scrollbar { /* width */
     height: 0rem;
