@@ -12,7 +12,8 @@
     /*veg*/
     --new-item: #5ABF56;
     --myBGColor: #f7f2e8;
-    --myPrimaryColor: rgba(0,0,0,0.8);
+    /* --myPrimaryColor: rgba(0,0,0,0.8); */
+    --myPrimaryColor: #443e35;
     /* --myPrimaryColor: #401801; */
 }
 
@@ -131,7 +132,7 @@ label[for="Salads"]{
 .card {
     background-color: var(--myBGColor);
     letter-spacing: .5px;
-
+    color: var(--myPrimaryColor);
    /* backdrop-filter: blur(5px); */
 }
 
