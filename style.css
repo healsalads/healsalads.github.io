@@ -26,14 +26,16 @@ body {
     background-color: var(--myBGColor);
     color: var(--myPrimaryColor);
 }
-/*
-.card-body:hover{
+/* --------------- changing font size of body on hover -------------------------*/
+/* .card-body:hover{
     font-size: 1rem;
 }
 .card-body:active{
     font-size: 1rem;
-}*/
+}  */
 
+
+/* --------------------------- dark or light theme auto respect --------------------------- */
 /* if user preference set to light mode */
 /* Dark mode */
 /*@media (prefers-color-scheme: dark) {
@@ -51,6 +53,11 @@ body {
     }
 }
 */
+
+#section-menuItems{
+    position:relative;
+    top:20px;
+}
 
 .LogoDisplay{
     max-width: 100%;
@@ -108,7 +115,7 @@ body {
     background: #555;
   }
 
-.myNav{
+div.myNav{
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -118,7 +125,7 @@ body {
     white-space: nowrap;
 }
 
-label[for="Salads"]{
+a[id="Salads"]{
     padding-left: 10px;
 }
 
@@ -238,26 +245,4 @@ a:active{
   /*background-color: var(--green-category);*/
   color: var(--myPrimaryColor);
   border-bottom: var(--myPrimaryColor) .2rem solid;
-}
-
-/* hidding content by default */
-div.card[data-menu-category] {
-    display: none;
-}
-
-/* showing content based on selection of menu */
-    /* the :has pseudo-class isn't supported by firefox; so, find another method to implement this */
-div:has(a[id="Mains"]:active) ~ div.card[data-menu-category="Mains"],
-div:has(a[id="Salads"]:checked) ~ div.card[data-menu-category="Salads"],
-div:has(a[id="Salad Wraps"]:checked) ~ div.card[data-menu-category="Salad Wraps"],
-div:has(a[id="Smoothies"]:checked) ~ div.card[data-menu-category="Smoothies"],
-div:has(a[id="Sandwiches"]:checked) ~ div.card[data-menu-category="Sandwiches"],
-div:has(a[id="Rice Bowls"]:checked) ~ div.card[data-menu-category="Rice Bowls"],
-div:has(a[id="Parfait (Overnight Soaked Oats)"]:checked) ~ div.card[data-menu-category="Parfait (Overnight Soaked Oats)"],
-div:has(a[id="Pastas"]:checked) ~ div.card[data-menu-category="Pastas"],
-div:has(a[id="Mini Meals"]:checked) ~ div.card[data-menu-category="Mini Meals"],
-div:has(a[id="Parathas"]:checked) ~ div.card[data-menu-category="Parathas"],
-div:has(a[id="Cheat Day Meal"]:checked) ~ div.card[data-menu-category="Cheat Day Meal"],
-div:has(a[id="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"] {
-    display: block;
 }
