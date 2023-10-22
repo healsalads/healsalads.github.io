@@ -104,6 +104,7 @@ div.section-menuItems{
     outline: 5px solid red;
 }
 
+/* IDEA: try setting this as a block element */
 a{
     align-self: center;
     padding-right: .5rem;
