@@ -6,10 +6,8 @@
 
 /* setting variables for colors */
 :root {
-    --red-category: #D92534;
-    /*non-veg*/
-    --green-category: #babb49;
-    /*veg*/
+    --red-category: #D92534; /*non-veg*/
+    --green-category: #babb49; /*veg*/
     --new-item: #5ABF56;
     --myBGColor: #e4d3ba;
     --myPrimaryColor: rgba(0,0,0,0.8);
@@ -54,11 +52,6 @@ body {
 }
 */
 
-#section-menuItems{
-    position:relative;
-    top:20px;
-}
-
 .LogoDisplay{
     max-width: 100%;
     max-height: 10vh;
@@ -73,28 +66,173 @@ body {
     left: 30vw;
     transform: scale(.9);
 }
+
+/* #region navScrollBar */
 .myNav::-webkit-scrollbar { /* width */
     height: 0rem;
-  }
-  
-  
-  .myNav::-webkit-scrollbar-track { /* Track */
+}
+.myNav::-webkit-scrollbar-track { /* Track */
     background: rgba(0,0,0,0.8);
     z-index: 2;
-  }
-  
-  
-  .myNav::-webkit-scrollbar-thumb { /* Handle */
+}  
+.myNav::-webkit-scrollbar-thumb { /* Handle */
     background: #e4d3ba;
     border-radius: 10px;
-  }
-  
-  
-  .myNav::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+} 
+.myNav::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
-  }
+}
+/* #endregion navScrollBar */
 
+div.myNav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: var(--green-category);
+    /* padding: 10px; */
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 1.8rem;
+    text-align: center;
+}
 
+div.section-menuItems{
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    outline: 5px solid red;
+}
+
+a{
+    align-self: center;
+    padding-right: .5rem;
+    /* margin: 5px; */
+    font-family: 'Arial';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f1f1f1;
+    text-decoration-line: none;
+}
+
+/* highlighting the selected label */
+a:hover{
+  /*background-color: var(--green-category);*/
+  color: rgba(0,0,0,0.2);
+  border-bottom: var(--myPrimaryColor) .2z  rem solid;
+}
+
+a:active, a:visited{
+  /*background-color: var(--green-category);*/
+  color: var(--myPrimaryColor);
+  border-bottom: var(--myPrimaryColor) .2rem solid;
+}
+
+a[id="Salads"]{
+    padding-left: 10px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.30);
+    letter-spacing: .5px;
+
+   /* backdrop-filter: blur(5px); */
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+}
+
+.card-body{
+    border: 5px solid blue;
+
+}
+
+.card-footer {
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    background-color: rgba(255,255,255,0);
+}
+
+.item-price {
+    display: inline-block;
+    position: absolute;
+    right:15px;
+    font-style: italic;
+}
+span.item-price::before {
+    content: "₹ "
+}
+
+/* ------------------ edit this block to edit the "NEW" logo ------------- */
+/* #region newItem */
+h1.item-new::after {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    content: "NEW";
+    color: white;
+    font-size: 0.6rem;
+    background-color: var(--new-item);
+    padding: 3px;
+}
+
+/*adding the right border green highlight for new items*/
+.item-new {
+    border-right: 10px var(--new-item) solid;
+}
+/* #endregion newItem */
+
+/* #region foodCategoryIcons */
+h1.foodCategory-veg::after {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+h1.foodCategory-non-veg::after {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+h1.foodCategory-egg::after {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+    content: "";
+    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* #endregion foodCategoryIcons */
+
+/* #region rightScrollBar */
 ::-webkit-scrollbar {  /* width */
     width: 4px;
   }
@@ -114,135 +252,4 @@ body {
   ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
   }
-
-div.myNav{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    background-color: var(--green-category);
-    /* padding: 10px; */
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-a[id="Salads"]{
-    padding-left: 10px;
-}
-
-.card-header {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0.5rem 2rem 0.5rem 0.5rem;
-}
-
-.card {
-    background-color: rgba(255, 255, 255, 0.30);
-    letter-spacing: .5px;
-
-   /* backdrop-filter: blur(5px); */
-}
-
-.item-price {
-    display: inline-block;
-    position: absolute;
-    right:15px;
-    font-style: italic;
-}
-
-.card-footer {
-    padding-bottom: 0.8rem;
-    margin-bottom: 1.2rem;
-    background-color: rgba(255,255,255,0);
-}
-
-/*edit this block to edit the "NEW" logo*/
-h1.item-new::after {
-    display: inline-block;
-    height: auto;
-    width: auto;
-    content: "NEW";
-    color: white;
-    font-size: 0.6rem;
-    background-color: var(--new-item);
-    padding: 3px;
-}
-
-/*adding the right border green highlight for new items*/
-.item-new {
-    border-right: 10px var(--new-item) solid;
-}
-
-.foodCategory-veg::after {
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
-    content: "";
-    background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
-    background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.foodCategory-non-veg::after {
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
-    content: "";
-    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
-    background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.foodCategory-egg::after {
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
-    content: "";
-    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
-    background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-span.item-price::before {
-    content: "₹ "
-}
-
-/* show labels inline */
-a {
-    display: inline-block;
-    /* border: var(--myBGColor) .1rem solid; */
-    padding: .5rem .5rem .2rem .2rem;
-    /* margin: 5px; */
-    font-family: 'Arial';
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #f1f1f1;
-    text-decoration-line: none;
-}
-
-/* highlighting the selected label */
-a:hover{
-  /*background-color: var(--green-category);*/
-  color: rgba(0,0,0,0.2);
-  border-bottom: var(--myPrimaryColor) .2rem solid;
-}
-
-a:active{
-  /*background-color: var(--green-category);*/
-  color: var(--myPrimaryColor);
-  border-bottom: var(--myPrimaryColor) .2rem solid;
-}
+/* #endregion rightScrollBar */
