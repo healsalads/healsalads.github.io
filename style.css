@@ -214,13 +214,8 @@ span.item-price::before {
     content: "₹ "
 }
 
-/* hidding radio buttons */
-input {
-    display: none;
-}
-
 /* show labels inline */
-input+label {
+a {
     display: inline-block;
     /* border: var(--myBGColor) .1rem solid; */
     padding: .5rem .5rem .2rem .2rem;
@@ -229,11 +224,17 @@ input+label {
     font-size: 1.2rem;
     font-weight: 600;
     color: #f1f1f1;
-
+    text-decoration-line: none;
 }
 
 /* highlighting the selected label */
-input:checked+label {
+a:hover{
+  /*background-color: var(--green-category);*/
+  color: rgba(0,0,0,0.2);
+  border-bottom: var(--myPrimaryColor) .2rem solid;
+}
+
+a:active{
   /*background-color: var(--green-category);*/
   color: var(--myPrimaryColor);
   border-bottom: var(--myPrimaryColor) .2rem solid;
@@ -246,17 +247,17 @@ div.card[data-menu-category] {
 
 /* showing content based on selection of menu */
     /* the :has pseudo-class isn't supported by firefox; so, find another method to implement this */
-div:has(input[value="Mains"]:checked) ~ div.card[data-menu-category="Mains"],
-div:has(input[value="Salads"]:checked) ~ div.card[data-menu-category="Salads"],
-div:has(input[value="Salad Wraps"]:checked) ~ div.card[data-menu-category="Salad Wraps"],
-div:has(input[value="Smoothies"]:checked) ~ div.card[data-menu-category="Smoothies"],
-div:has(input[value="Sandwiches"]:checked) ~ div.card[data-menu-category="Sandwiches"],
-div:has(input[value="Rice Bowls"]:checked) ~ div.card[data-menu-category="Rice Bowls"],
-div:has(input[value="Parfait (Overnight Soaked Oats)"]:checked) ~ div.card[data-menu-category="Parfait (Overnight Soaked Oats)"],
-div:has(input[value="Pastas"]:checked) ~ div.card[data-menu-category="Pastas"],
-div:has(input[value="Mini Meals"]:checked) ~ div.card[data-menu-category="Mini Meals"],
-div:has(input[value="Parathas"]:checked) ~ div.card[data-menu-category="Parathas"],
-div:has(input[value="Cheat Day Meal"]:checked) ~ div.card[data-menu-category="Cheat Day Meal"],
-div:has(input[value="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"] {
+div:has(a[id="Mains"]:active) ~ div.card[data-menu-category="Mains"],
+div:has(a[id="Salads"]:checked) ~ div.card[data-menu-category="Salads"],
+div:has(a[id="Salad Wraps"]:checked) ~ div.card[data-menu-category="Salad Wraps"],
+div:has(a[id="Smoothies"]:checked) ~ div.card[data-menu-category="Smoothies"],
+div:has(a[id="Sandwiches"]:checked) ~ div.card[data-menu-category="Sandwiches"],
+div:has(a[id="Rice Bowls"]:checked) ~ div.card[data-menu-category="Rice Bowls"],
+div:has(a[id="Parfait (Overnight Soaked Oats)"]:checked) ~ div.card[data-menu-category="Parfait (Overnight Soaked Oats)"],
+div:has(a[id="Pastas"]:checked) ~ div.card[data-menu-category="Pastas"],
+div:has(a[id="Mini Meals"]:checked) ~ div.card[data-menu-category="Mini Meals"],
+div:has(a[id="Parathas"]:checked) ~ div.card[data-menu-category="Parathas"],
+div:has(a[id="Cheat Day Meal"]:checked) ~ div.card[data-menu-category="Cheat Day Meal"],
+div:has(a[id="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"] {
     display: block;
 }
