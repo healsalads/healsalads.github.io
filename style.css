@@ -127,7 +127,9 @@ label[for="Salads"]{
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
-    background-color: rgba(68,62,63, 0.05);
+    /*background-color: rgba(68,62,63, 0.05);*/
+    background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%);
+
     border: 0px;
 }
 
@@ -144,12 +146,15 @@ label[for="Salads"]{
     position: absolute;
     right:15px;
     font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .card-footer {
     border: 0px;
     padding-bottom: 1.8rem;
-    background-color: rgba(68,62,63, 0.03);
+    background: linear-gradient(180deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0) 100%);
+
 }
 
 /*edit this block to edit the "NEW" logo*/
@@ -169,49 +174,37 @@ h1.item-new::after {
     border-right: 10px var(--new-item) solid;
 }
 
-.foodCategory-veg::after {
+h1.foodCategory-veg::before {
     display: inline-block;
     height: 1rem;
     width: 1rem;
-    margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
+    margin-right: 10px;
     content: "";
     background: url(icons8-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: relative;
 }
 
-.foodCategory-non-veg::after {
+.foodCategory-non-veg::before {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 8px;
+    content: "";
+    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
+    background-size: 100%;
+    position: relative;
+}
+
+.foodCategory-egg::before {
     display: inline-block;
     height: 1rem;
     width: 1rem;
     margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
     content: "";
     background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
     background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.foodCategory-egg::after {
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: 5px;
-    margin-left: 2px;
-    margin-bottom: -3px;
-    content: "";
-    background: url(icons8-non-vegetarian-food-symbol-48.png) no-repeat 0 0;
-    background-size: 100%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: relative;
 }
 
 span.item-price::before {
