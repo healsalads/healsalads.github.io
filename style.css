@@ -13,7 +13,7 @@
     --new-item: #5ABF56;
     --myBGColor: #f7f2e8;
     /* --myPrimaryColor: rgba(0,0,0,0.8); */
-    --myPrimaryColor: #443e35;
+    --myPrimaryColor: rgb(68,62,63);
     /* --myPrimaryColor: #401801; */
 }
 
@@ -127,12 +127,15 @@ label[for="Salads"]{
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
+    background-color: rgba(68,62,63, 0.05);
+    border: 0px;
 }
 
 .card {
-    background-color: var(--myBGColor);
+    background-color: rgba(33,37,41,0.03) !important;
     letter-spacing: .5px;
-    color: var(--myPrimaryColor);
+    color: var(--myPrimaryColor) !important;
+    border: 0px;
    /* backdrop-filter: blur(5px); */
 }
 
@@ -144,9 +147,9 @@ label[for="Salads"]{
 }
 
 .card-footer {
-    padding-bottom: 0.8rem;
-    margin-bottom: 1.2rem;
-    background-color: rgba(255,255,255,0);
+    border: 0px;
+    padding-bottom: 1.8rem;
+    background-color: rgba(68,62,63, 0.03);
 }
 
 /*edit this block to edit the "NEW" logo*/
