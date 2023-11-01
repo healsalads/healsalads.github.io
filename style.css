@@ -24,7 +24,6 @@ html{
 body {
     font-family: 'Roboto';
     font-size: 1rem;
-    font-style: normal;
     background-color: var(--myBGColor);
     color: var(--myPrimaryColor);
 }
