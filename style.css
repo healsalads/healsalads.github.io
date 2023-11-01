@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap');
 /*for all text other than Headings*/
 @import url('stylesheet.css') ;
+@import url('stylesheetc.css') ;
 /* setting variables for colors */
 :root {
     --red-category: #D92534;
@@ -24,12 +25,12 @@ html{
 }
 
 body {
-    font-family:'bad_to_the_boneregular';
+    font-family: 'squeaky_chalk_soundregular';
     font-size: 1rem;
     font-weight: 100;
    /* background-color: var(--myBGColor); */
-   background-image:url(chalkboard-wallpaper.jpeg);
-   background-size: cover;
+   background-image:url(chalkboard-loop.jpeg);
+   background-size: fixed;
     color: var(--myPrimaryColor);
 }
 /*
@@ -118,7 +119,8 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1;
-    border-bottom: #f1f1f1;
+    background-color: rgba(0,0,0,1);
+    border-bottom: var(--myPrimaryColor) .1rem dotted;
     /* padding: 10px; */
     overflow-x: auto;
     white-space: nowrap;
@@ -130,6 +132,7 @@ label[for="Salads"]{
 
 .card-header {
     font-size: 1.5rem;
+    font-family:'bad_to_the_boneregular';
     padding: 0.5rem 2rem 0.5rem 0.5rem;
     /*background-color: rgba(68,62,63, 0.05);
     background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%); */
