@@ -3,7 +3,7 @@
 /*for Headings*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap');
 /*for all text other than Headings*/
-
+@import url('stylesheet.css') ;
 /* setting variables for colors */
 :root {
     --red-category: #D92534;
@@ -12,8 +12,10 @@
     /*veg*/
     --new-item: #5ABF56;
     --myBGColor: #f7f2e8;
-    /* --myPrimaryColor: rgba(0,0,0,0.8); */
-    --myPrimaryColor: rgb(68,62,63);
+    --myPrimaryColor: #ffffff;
+
+    /* --myPrimaryColor: rgba(0,0,0,0.8); 
+    --myPrimaryColor: rgb(68,62,63); */
     /* --myPrimaryColor: #401801; */
 }
 
@@ -22,9 +24,11 @@ html{
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'squeaky_chalk_soundregular';
     font-size: 1rem;
-    background-color: var(--myBGColor);
+   /* background-color: var(--myBGColor); */
+   background-image:url(background.png);
+   background-size: cover;
     color: var(--myPrimaryColor);
 }
 /*
