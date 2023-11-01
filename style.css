@@ -24,10 +24,11 @@ html{
 }
 
 body {
-    font-family: 'squeaky_chalk_soundregular';
+    font-family:'bad_to_the_boneregular';
     font-size: 1rem;
+    font-weight: 100;
    /* background-color: var(--myBGColor); */
-   background-image:url(background.png);
+   background-image:url(chalkboard-wallpaper.jpeg);
    background-size: cover;
     color: var(--myPrimaryColor);
 }
@@ -117,7 +118,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1;
-    background-color: var(--green-category);
+    border-bottom: #f1f1f1;
     /* padding: 10px; */
     overflow-x: auto;
     white-space: nowrap;
@@ -128,17 +129,16 @@ label[for="Salads"]{
 }
 
 .card-header {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
-    /*background-color: rgba(68,62,63, 0.05);*/
-    background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%);
+    /*background-color: rgba(68,62,63, 0.05);
+    background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%); */
 
     border: 0px;
 }
 
 .card {
-    background-color: rgba(33,37,41,0.03) !important;
+    background-color: rgba(33,37,41,0.0) !important;
     letter-spacing: .5px;
     color: var(--myPrimaryColor) !important;
     border: 0px;
