@@ -123,43 +123,52 @@ label[for="Salads"]{
     padding-left: 10px;
 }
 
-.card-header {
+h1{
+    display: inline-block;
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 0.5rem 2rem 0.5rem 0.5rem;
-    /*background-color: rgba(68,62,63, 0.05);*/
-    background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%);
-
+    /* background-color: rgba(68,62,63, 0.0); */
+    /* background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%); */
+    max-width: 85%;
     border: 0px;
+    margin-bottom: 0px;
 }
-
-.card {
-    background-color: rgba(33,37,41,0.03) !important;
-    letter-spacing: .5px;
-    color: var(--myPrimaryColor) !important;
-    border: 0px;
-   /* backdrop-filter: blur(5px); */
-}
-
 .item-price {
     display: inline-block;
     position: absolute;
-    right:15px;
+    right: 15px;
     font-style: italic;
     font-weight: 400;
     font-size: 1rem;
 }
 
-.card-footer {
+.card-header{
     border: 0px;
-    padding-bottom: 1.8rem;
-    background: linear-gradient(180deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0) 100%);
+    background: none;
+    margin-bottom: 0px;
+    padding: 5px 2px 2px 5px;
+}
 
+
+.card {
+    background-color: rgba(33,37,41,0.0) !important;
+    letter-spacing: .5px;
+    color: var(--myPrimaryColor) !important;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--myPrimaryColor);
+   /* backdrop-filter: blur(5px); */
+}
+
+.card-body{
+    padding: 6px 5px 16px 5px;
 }
 
 /*edit this block to edit the "NEW" logo*/
-h1.item-new::after {
+.item-new::after {
     display: inline-block;
+    position: absolute;
+    top: .4rem;
+    margin-left: .4rem;
     height: auto;
     width: auto;
     content: "NEW";
@@ -170,8 +179,8 @@ h1.item-new::after {
 }
 
 /*adding the right border green highlight for new items*/
-.item-new {
-    border-right: 10px var(--new-item) solid;
+div:has(div > h1.item-new){
+    border-right: 8px var(--new-item) solid;
 }
 
 h1.foodCategory-veg::before {
