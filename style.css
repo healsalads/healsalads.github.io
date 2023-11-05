@@ -58,15 +58,18 @@ body {
     max-height: 10vh;
 }
 
-#TopLogo{
+img#TopLogo{
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    padding: 5px;
+    width: 100%;
     background: var(--myBGColor);
     /* max-width: 100%; */
-    height: 10vh;
+    height: 9vh;
     background-repeat: no-repeat;
-    position: relative;
-    left: 30vw;
-    transform: scale(.9);
 }
+/* #region nav scrollbar*/
 .myNav::-webkit-scrollbar { /* width */
     height: 0rem;
   }
@@ -87,35 +90,37 @@ body {
   .myNav::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
   }
+/* #endregion nav scrollbar */
 
-
+/* #region side scrollbar */
 ::-webkit-scrollbar {  /* width */
     width: 4px;
-  }
+}
+
+
+::-webkit-scrollbar-track {  /* Track */
+    background: #f1f1f1;
+}
   
 
-  ::-webkit-scrollbar-track {  /* Track */
-    background: #f1f1f1;
-  }
-  
-  
-  ::-webkit-scrollbar-thumb { /* Handle */
+::-webkit-scrollbar-thumb { /* Handle */
     background: var(--red-category);
     border-radius: 2px;
-  }
+}
   
   
-  ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555;
   }
 
+/* #endregion side scrollbar */
 .myNav{
     position: sticky;
-    top: 0px;
-    z-index: 1;
+    top: -1px;
+    z-index: 2;
     background-color: var(--green-category);
     /* padding: 10px; */
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
 }
 
