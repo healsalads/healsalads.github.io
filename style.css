@@ -1,9 +1,10 @@
-/* importing fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-/*for Headings*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&display=swap');
-/*for all text other than Headings*/
-
+@font-face {
+    font-family: 'bad_to_the_boneregular';
+    src: url('coloredcrayons-7wpr-webfont.woff2') format('woff2'),
+         url('coloredcrayons-7wpr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* setting variables for colors */
 :root {
     --red-category: #D92534;
@@ -12,8 +13,10 @@
     /*veg*/
     --new-item: #5ABF56;
     --myBGColor: #f7f2e8;
-    /* --myPrimaryColor: rgba(0,0,0,0.8); */
-    --myPrimaryColor: rgb(68,62,63);
+    --myPrimaryColor: #ffffff;
+
+    /* --myPrimaryColor: rgba(0,0,0,0.8); 
+    --myPrimaryColor: rgb(68,62,63); */
     /* --myPrimaryColor: #401801; */
 }
 
@@ -22,9 +25,12 @@ html{
 }
 
 body {
-    font-family: 'Roboto';
+    font-family:'bad_to_the_boneregular';
     font-size: 1rem;
-    background-color: var(--myBGColor);
+    font-weight: 100;
+   /* background-color: var(--myBGColor); */
+   background-image:url(chalkboard-wallpaper.jpeg);
+   background-size: cover;
     color: var(--myPrimaryColor);
 }
 /*
@@ -113,7 +119,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1;
-    background-color: var(--green-category);
+    border-bottom: #f1f1f1;
     /* padding: 10px; */
     overflow-x: auto;
     white-space: nowrap;
@@ -123,52 +129,42 @@ label[for="Salads"]{
     padding-left: 10px;
 }
 
-h1{
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    /* background-color: rgba(68,62,63, 0.0); */
-    /* background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%); */
-    max-width: 85%;
-    border: 0px;
-    margin-bottom: 0px;
-}
-.item-price {
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1rem;
-}
+.card-header {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    /*background-color: rgba(68,62,63, 0.05);
+    background: linear-gradient(360deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0.08) 100%); */
 
-.card-header{
     border: 0px;
-    background: none;
-    margin-bottom: 0px;
-    padding: 5px 2px 2px 5px;
 }
-
 
 .card {
     background-color: rgba(33,37,41,0.0) !important;
     letter-spacing: .5px;
     color: var(--myPrimaryColor) !important;
-    border-width: 0px 0px 1px 0px;
-    border-color: var(--myPrimaryColor);
+    border: 0px;
    /* backdrop-filter: blur(5px); */
 }
 
-.card-body{
-    padding: 6px 5px 16px 5px;
+.item-price {
+    display: inline-block;
+    position: absolute;
+    right:15px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card-footer {
+    border: 0px;
+    padding-bottom: 1.8rem;
+    background: linear-gradient(180deg, rgba(236,235,244,0) 0%, rgba(14,14,14,0) 100%);
+
 }
 
 /*edit this block to edit the "NEW" logo*/
-.item-new::after {
+h1.item-new::after {
     display: inline-block;
-    position: absolute;
-    top: .4rem;
-    margin-left: .4rem;
     height: auto;
     width: auto;
     content: "NEW";
@@ -179,8 +175,8 @@ h1{
 }
 
 /*adding the right border green highlight for new items*/
-div:has(div > h1.item-new){
-    border-right: 8px var(--new-item) solid;
+.item-new {
+    border-right: 10px var(--new-item) solid;
 }
 
 h1.foodCategory-veg::before {
