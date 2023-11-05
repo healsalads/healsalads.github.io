@@ -122,6 +122,7 @@ img#TopLogo{
     /* padding: 10px; */
     overflow-x: scroll;
     white-space: nowrap;
+    animation: gelatine .6s linear;
 }
 
 label[for="Salads"]{
@@ -240,7 +241,6 @@ input+label {
     font-size: 1.2rem;
     font-weight: 600;
     color: #f1f1f1;
-
 }
 
 /* highlighting the selected label */
@@ -248,6 +248,7 @@ input:checked+label {
   /*background-color: var(--green-category);*/
   color: var(--myPrimaryColor);
   border-bottom: var(--myPrimaryColor) .2rem solid;
+  animation: gelatine 0.5s linear;
 }
 
 /* hidding content by default */
@@ -270,4 +271,38 @@ div:has(input[value="Parathas"]:checked) ~ div.card[data-menu-category="Parathas
 div:has(input[value="Cheat Day Meal"]:checked) ~ div.card[data-menu-category="Cheat Day Meal"],
 div:has(input[value="Healthy Dosa With Bhurji"]:checked) ~ div.card[data-menu-category="Healthy Dosa With Bhurji"] {
     display: block;
+}
+
+@keyframes gelatine{
+  from,to{
+    -webkit-transform:scale(1, 1);
+    transform:scale(1, 1)
+  }
+  25%{
+    -webkit-transform:scale(.9, 1.1);
+    transform:scale(.9, 1.1)
+  }
+  50%{
+    -webkit-transform:scale(1.1, .9);
+    transform:scale(1.1, .9)
+  }
+  75%{
+    -webkit-transform:scale(.95, 1.05);
+    transform:scale(.95, 1.05)
+  }
+  from,to{
+    -webkit-transform:scale(1, 1);
+    transform:scale(1, 1)
+  }
+  25%{
+    -webkit-transform:scale(.9, 1.1);
+    transform:scale(.9, 1.1)
+  }
+  50%{
+    -webkit-transform:scale(1.1, .9);
+    transform:scale(1.1, .9)
+  }75%{
+    -webkit-transform:scale(.95, 1.05);
+    transform:scale(.95, 1.05)
+  }
 }
