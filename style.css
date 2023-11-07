@@ -24,7 +24,12 @@ html{
 body {
     font-family: 'Roboto';
     font-size: 1rem;
-    background-color: var(--myBGColor);
+        /* Add your background pattern here */
+        background-color: var(--myBGColor);
+        background-image: radial-gradient( rgb(255, 255, 255) 1.5px, transparent 0);
+        background-size: 16px 16px;
+        background-position: -5px -5px
+    /* background-color: var(--myBGColor); */
     color: var(--myPrimaryColor);
 }
 /*
