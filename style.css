@@ -67,13 +67,15 @@ body {
 }
 
 #TopLogo{
-    background: var(--myBGColor);
-    /* max-width: 100%; */
-    height: 10vh;
-    background-repeat: no-repeat;
-    position: relative;
-    left: 30vw;
-    transform: scale(.9);
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        padding: 5px;
+        width: 100%;
+        /* background: var(--myBGColor); */
+        /* max-width: 100%; */
+        height: 9vh;
+        background-repeat: no-repeat;
 }
 .myNav::-webkit-scrollbar { /* width */
     height: 0rem;
